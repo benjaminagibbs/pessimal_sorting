@@ -3,10 +3,10 @@ The untapped field of deliberately inneffective logic.
 
 
 # Common Sorting Algorithms
-The field of sorting optimization is ubiquitous and essential to computer science, especially in foundations. An almost humorous reference point for the effectiveness of sorting is bogosort, which randomizes the order of a list then checks if if has been sorted. Bogosort has an average performance value of O((n+1)!). Another algorithm used for reference in ineffectiveness is bubblesort, which has a performace of O(n^2). The most effective algorithms, such as quicksort or mergesort, have average performances roughly on the order of O(n log(n)).
+The field of sorting optimization is ubiquitous and essential to computer science, especially in foundations. An almost humorous reference point for the effectiveness of sorting is bogosort, which randomizes the order of a list then checks if if has been sorted. Bogosort has an average performance value of O((n+1)!). Another algorithm used for reference in ineffectiveness is bubblesort, which has an average performace of O(n^2). The most effective algorithms, such as quicksort or mergesort, have average performances roughly on the order of O(n log(n)).
 
 # Existing Literature
-For practical reasons optimization has been explored thoroughly, but I think there is a world of less effective methodology which could be just as fun to build on. I have been further inspired by the Andrei Broder and Jorge Stolfi in their paper Pessimal Algorithms and Simplexity Analysis (https://www.mipmip.org/tidbits/pasa.pdf), where a slowsort is outlined which as performance even worse than bubblesort, but still worse than bubblesort. This paper proves that there is likely a range of pessimal effectiveness that is presently undocumented.
+For practical reasons optimization has been explored thoroughly, but I think there is a world of less effective methodology which could be just as fun to build on. I have been further inspired by the Andrei Broder and Jorge Stolfi in their paper Pessimal Algorithms and Simplexity Analysis (https://www.mipmip.org/tidbits/pasa.pdf), where a slowsort is outlined which has performance even lower than bubblesort, but still higher than bogosort. This paper proves that there is likely a range of pessimal effectiveness that is presently undocumented.
 
 # Goal
 The ultimate goal of this project is to create an algorithm which satisfies rules 1-3, and still has an average performance value is below bogosort O((n+1)!)
