@@ -27,7 +27,7 @@ pessimal_transient_derivative_sort: sort by derivative of largest transient from
 
 pessimal_ml_bogosort: by randomizing a list multiple times, data can be taken which trains an ai to reduce noise by perturbing the randomization in some way. Sounds like a tensorflow problem, may violate rule 2.
 
-# Current published ideas: 
+# Progress so far: 
 
 brutebogo is a sorting algorithm that creates random lists of random sizes within a certain allowance, then checks to see if they are sorted. If they are sorted, the length of the list is compared to the random list. The sorting completes if this last comparison is a match. The assumption is made that the list in need of sorting is made of all integers between zero and the list length -1.
 
