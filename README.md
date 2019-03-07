@@ -19,10 +19,19 @@ For consideration, an algorithm must satisfy the following perameters:
 3. The target average performance value must be below that of bubblesort O(n^2)
 
 
-# Current ideas:
+# Current ideas to be developed:
 
 pessimal_median_sort: iterate through a list to repeatedly calculate a median (or nearest to mean) value which is appended to a new list. The new list is then split between all values above and below the first value. The lower half is flipped then stitched to the top half to make a completed sort. May violate rule 3.
 
 pessimal_transient_derivative_sort: sort by derivative of largest transient from nearest values. Then sort it, i guess. more to come. May violate rule 1.
 
 pessimal_ml_bogosort: by randomizing a list multiple times, data can be taken which trains an ai to reduce noise by perturbing the randomization in some way. Sounds like a tensorflow problem, may violate rule 2.
+
+# Current published ideas: 
+
+brutebogo is a sorting algorithm that creates random lists of random sizes within a certain allowance, then checks to see if they are sorted. If they are sorted, the length of the list is compared to the random list. The sorting completes if this last comparison is a match. The assumption is made that the list in need of sorting is made of all integers between zero and the list length -1.
+
+brutebogo check is a script which compares bogosort to brute bogo. Currently brutebogo is slightly more efficient that bogo with an efficiency value of O(n!). I believe I'm on the right track here, it may just be an logic implementation issue.
+
+pessimal mean sort works by finding the mean or median value depending on list length and appending them to a new list. The new list is then split in half and stitched together to create a sorted list. While not objectively efficient, it is even more efficient than bubblesort, which is a disaster. This script is included as a research benchmark despite failing rule 3.
+
