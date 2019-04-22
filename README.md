@@ -8,6 +8,11 @@ The field of sorting optimization is ubiquitous and essential to computer scienc
 # Existing Literature
 For practical reasons optimization has been explored thoroughly, but I think there is a world of less effective methodology which could be just as fun to build on. I have been further inspired by the Andrei Broder and Jorge Stolfi in their paper Pessimal Algorithms and Simplexity Analysis (https://www.mipmip.org/tidbits/pasa.pdf), where a slowsort is outlined which has performance even lower than bubblesort, but still higher than bogosort. This paper proves that there is likely a range of pessimal effectiveness that is presently undocumented.
 
+Here are some additional resources pointed out by others interested in the project:
+https://sites.math.northwestern.edu/~mlerma/papers/inefficient_algorithms.pdf
+https://byorgey.wordpress.com/2019/02/16/worstsort/
+https://news.ycombinator.com/item?id=19397952
+
 # Goal
 The ultimate goal of this project is to create an algorithm which satisfies rules 1-3, and still has an average performance value is below bogosort O((n+1)!)
 
