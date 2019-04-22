@@ -23,6 +23,8 @@ For consideration, an algorithm must satisfy the following perameters:
 2. The central logic has to be responsible for the speed of the system. (bells and whistles to add time are cheating)
 3. The target average performance value must be below that of bubblesort O(n^2)
 
+A note on rule 2: For the purposes of this study it is a violation of rule 2 to nest potentially unlimmited algorithms which iterate permutations of all lists. This is to prevent the nested badsort technique outlined in Lerma's paper from winning the contest with its runaway repetitions.
+
 
 # Current ideas to be developed:
 
